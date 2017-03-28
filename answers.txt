@@ -1,0 +1,19 @@
+1) What is the general trend in the curve?
+We see that the general trend of the curve is that accuracy increases as
+data percentage increases.
+
+2) Are there parts of the curve that appear to be noisier than others? Why?
+After running the the graph several time, the general trend shows that there
+is more noise in the bottom right hand corner of the graph where the accuracy varies
+and the percentage of data used is quite low. This is probably because there
+are several outliers that skew the data when the data set is smaller, where as
+when the percentage of data used for training increases then the training data
+becomes pretty standardized and not easily skewed by an outlier.
+
+3) How many trials do you need to get a smooth curve?
+After 1000 trials there is a smooth curve.
+
+4) Try different values for C (by changing LogisticRegression(C=10** -10)).
+What happens? If you want to know why this happens, see this Wikipedia page as
+well as the documentation for LogisticRegression in scikit-learn.
+Larger values of C seem to make the curve noisier while lower values seem to make it less noisy.
